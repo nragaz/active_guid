@@ -10,15 +10,15 @@ Requires UUIDTools ~> 2.1, Rails ~> 3 and Ruby 1.9.2.
 Usage
 -----
   
-  create_table 'users' do |t|
-    t.string 'guid', limit: 32
-  end
+    create_table 'users' do |t|
+      t.string 'guid', limit: 32
+    end
   
-  class User < ActiveRecord::Base
-    include ActiveGuid
-  end
+    class User < ActiveRecord::Base
+      include ActiveGuid
+    end
   
-  u = User.new
-  u.valid? # GUID is generated before_validation
+    u = User.new
+    u.valid? # GUID is generated before_validation
   
-  u.guid # => 'e5a49bdd-72a0-4e72-802a-637c22ab6507' or whatever
+    u.guid # => 'e5a49bdd-72a0-4e72-802a-637c22ab6507' or whatever
