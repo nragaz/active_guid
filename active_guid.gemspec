@@ -10,5 +10,6 @@ Gem::Specification.new do |s|
   
   s.add_dependency 'uuidtools', '~> 2.1'
   s.add_dependency 'activerecord', '~> 3'
+  s.add_dependency 'activesupport', '~> 3'
   s.add_development_dependency 'sqlite3'
 end
