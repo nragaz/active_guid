@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.summary = "Add a GUID to Active Record instances."
   s.description = "Add a GUID to Active Record instances."
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.authors = ["Nick Ragaz"]
   s.email = "nick.ragaz@gmail.com"
   s.homepage = "http://github.com/nragaz/active_guid"

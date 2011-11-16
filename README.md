@@ -22,3 +22,10 @@ Usage
     u.valid? # GUID is generated before_validation
   
     u.guid # => 'e5a49bdd-72a0-4e72-802a-637c22ab6507' or whatever
+    
+Changelog
+---------
+
+0.0.2: Handle situations where the default of the GUID column is "" instead of NULL
+
+0.0.1: Initial release

@@ -13,6 +13,6 @@ module ActiveGuid
   private
   
   def generate_guid
-    self[:guid] ||= UUIDTools::UUID.random_create.to_s
+    self.guid = UUIDTools::UUID.random_create.to_s unless guid?
   end
 end
