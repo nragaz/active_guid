@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    active_guid (0.0.2)
+    active_guid (0.0.3)
       activerecord (~> 3)
       activesupport (~> 3)
+      default_value_for
       uuidtools (~> 2.1)
 
 GEM
@@ -39,6 +40,7 @@ GEM
       multi_json (~> 1.0)
     arel (2.2.1)
     builder (3.0.0)
+    default_value_for (1.0.7)
     erubis (2.7.0)
     hike (1.2.1)
     i18n (0.6.0)
