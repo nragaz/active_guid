@@ -19,12 +19,12 @@ Usage
     end
   
     u = User.new
-    u.valid? # GUID is generated before_validation
-  
     u.guid # => 'e5a49bdd-72a0-4e72-802a-637c22ab6507' or whatever
     
 Changelog
 ---------
+
+0.0.3: Use `default_value_for` instead of a `before_validation` callback. So the GUID will be populated when the record is instantiated and can be passed to the client before the record is saved. See [default_value_for](http://github.com/FooBarWidget/default_value_for) for more information.
 
 0.0.2: Handle situations where the default of the GUID column is "" instead of NULL
 
